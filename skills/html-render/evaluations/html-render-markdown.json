@@ -1,0 +1,22 @@
+{
+  "name": "Convert Markdown to Interactive HTML",
+  "skills": ["cai-html-effectiveness"],
+  "query": "Convert this AGENTS.md file to an interactive HTML page",
+  "expected_behavior": [
+    "Step 1: Read the AGENTS.md file",
+    "Step 2: Classify as Category 7 (Research & Learning)",
+    "Step 3: Generate self-contained HTML with TOC, collapsible sections, and syntax highlighting",
+    "Step 4: Save to /tmp/agents.html",
+    "Step 5: Report file path to user"
+  ],
+  "success_criteria": [
+    "Skill activates when user asks to convert content to HTML",
+    "Generated HTML is a single self-contained file with no external dependencies",
+    "HTML includes dark/light mode support via prefers-color-scheme",
+    "HTML includes interactive elements (collapsible sections, navigation)",
+    "File is saved to /tmp/ directory",
+    "HTML renders correctly when opened in a browser"
+  ],
+  "verified_date": "2026-05-12",
+  "status": "PASSED"
+}

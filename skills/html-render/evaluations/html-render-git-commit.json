@@ -1,0 +1,25 @@
+{
+  "name": "Convert Git Commit to Annotated Diff HTML",
+  "skills": ["cai-html-effectiveness"],
+  "query": "Convert this git commit to HTML: https://github.infra..com/Sense/cml-serving/pull/1373/commits/e8ef85e31335d98b14d864d9363d5cf1d0f40dbb",
+  "expected_behavior": [
+    "Step 1: Parse URL to extract host (github.infra..com), org (Sense), repo (cml-serving), PR (1373), SHA (e8ef85e...)",
+    "Step 2: Fetch commit metadata via gh api repos/Sense/cml-serving/commits/e8ef85e... --hostname github.infra..com",
+    "Step 3: Fetch diff via gh api with Accept: application/vnd.github.diff header",
+    "Step 4: Classify as Category 2 (Code Review)",
+    "Step 5: Generate HTML with commit header, per-file diffs, syntax highlighting, stats",
+    "Step 6: Save to /tmp/cml-serving-e8ef85e.html",
+    "Step 7: Report file path to user"
+  ],
+  "success_criteria": [
+    "Skill activates when user provides a GitHub commit URL",
+    "Correctly parses org, repo, and SHA from the URL",
+    "Uses gh api with --hostname for GitHub Enterprise URLs",
+    "Generated HTML shows annotated diff with line numbers and color coding",
+    "Includes commit message, author, date, and file change stats",
+    "Per-file diffs are collapsible",
+    "HTML is self-contained with no external dependencies"
+  ],
+  "verified_date": "2026-05-12",
+  "status": "PASSED"
+}

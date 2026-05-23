@@ -1,0 +1,28 @@
+{
+  "name": "RCA Document Creation (HTML)",
+  "skills": ["rca"],
+  "query": "Write an RCA for the authentication service outage we investigated",
+  "expected_behavior": [
+    "Step 1: Determines the RCA file path (user-provided or /tmp/rca-<slug>.html)",
+    "Step 2: Reads the file if it exists (never writes without reading first)",
+    "Step 3: Determines action (new issue, correction, workaround, or false positive)",
+    "Step 4: Generates self-contained HTML following  docs visual standards",
+    "Step 5: Includes color-coded status badges, collapsible investigation, copy-to-clipboard on code",
+    "Step 6: Updates Runbook and Learnings sections in-place with transferable knowledge",
+    "Step 7: Saves to /tmp/ and tells user the path"
+  ],
+  "success_criteria": [
+    "Output is a single self-contained .html file with zero external dependencies",
+    "Always reads existing file before writing",
+    "Uses correct HTML structure (article.issue sections with status badges)",
+    "Status badges are color-coded (success/warning/muted)",
+    "Investigation sections are collapsible via <details>",
+    "Fix and Runbook commands are in <pre> blocks with copy-to-clipboard",
+    "Appends Update blocks for corrections (never rewrites original content)",
+    "Runbook steps are copy-paste ready with verification steps",
+    "Learnings are transferable principles, not incident-specific observations",
+    "HTML opens correctly in a browser and is print-friendly"
+  ],
+  "verified_date": "2025-05-19",
+  "status": "PASSED"
+}
