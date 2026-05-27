@@ -1,0 +1,16 @@
+{
+  "name": "devkit",
+  "description": "Daily-use software engineering skills for Claude Code",
+  "owner": {
+    "name": "Ritvik Paramkusham"
+  },
+  "plugins": [
+    {
+      "name": "devkit",
+      "source": "./",
+      "description": "Software engineering daily use skills/tools",
+      "version": "1.0.0",
+      "repository": "https://github.com/ritvikneu/dev-kit"
+    }
+  ]
+}
